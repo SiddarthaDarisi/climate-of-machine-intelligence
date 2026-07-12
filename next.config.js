@@ -2,10 +2,9 @@
 const nextConfig = {
   output: 'export',
   images: { unoptimized: true },
-  // For GitHub Pages project sites (https://<user>.github.io/<repo>/), uncomment
-  // and set basePath/assetPrefix to your repo name:
-  // basePath: '/your-repo-name',
-  // assetPrefix: '/your-repo-name/',
+  // GitHub Pages project site: https://siddarthadarisi.github.io/climate-of-machine-intelligence/
+  basePath: '/climate-of-machine-intelligence',
+  assetPrefix: '/climate-of-machine-intelligence/',
 };
 
 module.exports = nextConfig;

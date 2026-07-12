@@ -38,12 +38,10 @@ The included workflow at [`.github/workflows/deploy.yml`](.github/workflows/depl
 builds and deploys the static export to GitHub Pages on every push to `main`.
 
 1. In your repo settings, go to **Pages** and set the source to **GitHub Actions**.
-2. If this repo will be served from `https://<user>.github.io/<repo>/` (a project
-   page, not a user/org root page), open `next.config.js` and uncomment/set:
-   ```js
-   basePath: '/<repo>',
-   assetPrefix: '/<repo>/',
-   ```
+2. `next.config.js` is already configured with `basePath`/`assetPrefix` set to
+   `/climate-of-machine-intelligence`, matching this project's GitHub Pages URL:
+   `https://siddarthadarisi.github.io/climate-of-machine-intelligence/`. If you fork
+   or rename the repo, update those two values to match.
 3. Push to `main`. The workflow builds with `npm run build` and publishes the `out/`
    directory.
 
